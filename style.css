@@ -1,0 +1,136 @@
+div{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+body{
+    width:1210px;
+    background: linear-gradient(0.25turn, #3f9998, #ebf8e1, #f69d3c);
+}
+#bar{
+    height:100px;
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: black;
+}
+.nav{
+    display:flex;
+    margin-right: 10px;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+    font-size: 15px;
+    font-family: cursive;
+    top:15px;
+    height:25px;
+}
+
+#im{
+    top:200px;
+    font-size: 20px;
+}
+#BOD{
+    position: relative;
+    left:300px;
+    bottom:100px;
+}
+h2{
+    width:200px;
+    height: 200px;
+    display:flex;
+    color:rgb(11, 1, 1);
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position:relative;
+    top:50px;
+    left:50px;
+}
+#hello{
+    width:200px;
+    height:200px;
+    position:fixed;
+    left:120px;
+    font: italic small-caps bold 16px/2 cursive;
+    border:4px solid black;
+    border-radius: 50%;
+    background-image: url("flower.jpg");
+    background-size: contain;
+    background-color: antiquewhite;
+    transform: rotate(360deg);
+    animation: rot 5s ease-in 1s infinite reverse none;
+}
+
+@keyframes rot{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+    0%{font-size: 10px;}
+    20%{font-size: 12px;}
+    40%{font-size: 15px;}
+    60%{font-size: 17px;}
+    80%{font-size: 18.5px;}
+    to{font-size: 20px;}
+
+}
+#name{
+    font-size: 50px;
+    font-weight: 900;
+    color:rgb(70, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#name:hover{
+    color:rgb(185, 6, 42);
+    transform: scale(1.1);
+}
+#image{
+    position: absolute;
+    left:800px;
+    top:120px;
+    background-image: url("mee.jpeg");
+    height:390px;
+    width:380px;
+    background-size: contain;
+}
+#image:hover{
+    transform: scale(0.8);
+    border:5px inset rgb(12, 12, 12);
+}
+#image:active{
+    border:10px double black;
+    image-orientation: flip;
+    background-color: blue;
+}
+#col{
+    position: absolute;
+    top:500px;
+    font: italic 1.2rem "Fira Sans", serif;
+    display: flex;
+    flex-direction: column;
+    height:45px;
+    border:2px solid black;
+    border-radius: 6%;
+    width:400px;
+    background-size: cover;
+    background-color:cornsilk;
+    animation: column 7s ease-in-out 0s infinite alternate none;
+    justify-content:center;
+    border:2px solid rgb(18, 18, 16);
+}
+@keyframes column{
+    from{transform:translateX(1px);}
+    to{transform:translateX(380px);}
+}
+#footer{
+    display: flex;
+    position: absolute;
+    bottom:1px;
+    right:10px;
+    flex-direction: row;
+}
+i{
+    position: relative;
+    margin-right:40px;
+}
+.icons:hover{
+    transform:scale(2);
+}
